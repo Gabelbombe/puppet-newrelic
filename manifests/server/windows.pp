@@ -32,7 +32,7 @@
 #
 # === Copyright
 #
-# Copyright 20125 Ben Priestman, unless otherwise noted.
+# Copyright 2015 Ben Priestman, unless otherwise noted.
 #
 class newrelic::server::windows (
   $newrelic_package_ensure           = 'present',
@@ -65,7 +65,7 @@ class newrelic::server::windows (
       $destination_file = "NewRelicServerMonitor_${::architecture}_${newrelic_package_ensure}.msi"
     }
   }
-  
+
   if $package_source {
     download_file {$destination_file:
       url                   => $package_source,
@@ -74,7 +74,7 @@ class newrelic::server::windows (
       before                => Package[$newrelic_package_name],
     }
   }
-  
+
   package { $newrelic_package_name:
     ensure          => $newrelic_package_ensure,
     notify          => Service[$newrelic_service_name],
@@ -95,6 +95,4 @@ class newrelic::server::windows (
     hasrestart => true,
     hasstatus  => true,
   }
-
-
 }
