@@ -1,5 +1,5 @@
 {
-  "name": "puppet-newrelic",
+  "name": "ehime-newrelic",
   "version": "4.1.1",
   "source": "git://github.com/ehime/puppet-newrelic.git",
   "author": "Jd Daniel",
