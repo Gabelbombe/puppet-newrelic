@@ -28,7 +28,7 @@
 #
 # === Authors
 #
-# Felipe Salum <fsalum@gmail.com>
+# Felipe Salum <ehime@gmail.com>
 #
 # === Copyright
 #

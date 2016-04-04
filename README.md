@@ -1,6 +1,6 @@
 Newrelic Module for Puppet
 ==========================
-[![puppet-newrelic](https://img.shields.io/puppetforge/v/fsalum/newrelic.svg)](https://forge.puppetlabs.com/fsalum/newrelic) [![Build Status](https://secure.travis-ci.org/fsalum/puppet-newrelic.png)](http://travis-ci.org/fsalum/puppet-newrelic)
+[![puppet-newrelic](https://img.shields.io/puppetforge/v/ehime/newrelic.svg)](https://forge.puppetlabs.com/ehime/newrelic) [![Build Status](https://secure.travis-ci.org/ehime/puppet-newrelic.png)](http://travis-ci.org/ehime/puppet-newrelic)
 
 This module manages and installs the New Relic Server Monitoring and PHP agents.  
 
@@ -73,9 +73,9 @@ Mandatory parameters:
 Copyright and License
 ---------------------
 
-Copyright (C) 2014 Felipe Salum
+Copyright (C) 2016 Jd Daniel
 
-Felipe Salum can be contacted at: fsalum@gmail.com
+Jd Daniel can be contacted at: dodomeki@gmail.com
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
