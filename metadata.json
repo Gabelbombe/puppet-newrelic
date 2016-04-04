@@ -1,8 +1,8 @@
 {
-  "name": "ehime-newrelic",
+  "name": "puppet-newrelic",
   "version": "4.1.1",
   "source": "git://github.com/ehime/puppet-newrelic.git",
-  "author": "Felipe Salum",
+  "author": "Jd Daniel",
   "license": "Apache-2.0",
   "summary": "Puppet module for NewRelic",
   "description": "Module to install and configure New Relic server monitoring and New Relic PHP Agent",

@@ -10,11 +10,11 @@
 #
 # === Authors
 #
-# Felipe Salum <ehime@gmail.com>
+# Jd Daniel <dodomeki@gmail.com>
 #
 # === Copyright
 #
-# Copyright 2012 Felipe Salum, unless otherwise noted.
+# Copyright 2016 Jd Daniel, unless otherwise noted.
 #
 class newrelic {
 
