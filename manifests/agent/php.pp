@@ -96,6 +96,7 @@ class newrelic::agent::php (
         Newrelic::Php::Newrelic_ini[$newrelic_php_conf_dir],
         File['/etc/newrelic/newrelic.cfg'],
       ],
+    }
   }
 
   ::newrelic::php::newrelic_ini { $newrelic_php_conf_dir:
@@ -103,8 +104,6 @@ class newrelic::agent::php (
     newrelic_license_key => $newrelic_license_key,
     content              => template("${module_name}/newrelic.ini.erb"),
     require              => Package[$newrelic_php_package],
-    # before               => [ File['/etc/newrelic/newrelic.cfg'], Service[$newrelic_php_service] ],
-    # notify               => Service[$newrelic_php_service],
   }
 
   file { '/etc/newrelic/newrelic.cfg':

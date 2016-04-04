@@ -7,5 +7,4 @@ node default {
     newrelic_package_ensure => 'latest',
     newrelic_service_ensure => 'running',
   }
-
 }
