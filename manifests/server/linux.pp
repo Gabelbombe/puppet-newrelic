@@ -52,7 +52,7 @@ class newrelic::server::linux (
   $newrelic_nrsysmond_labels         = undef,
   $newrelic_nrsysmond_timeout        = undef,
   $newrelic_nrsysmond_disable_docker = undef,
- ) inherits ::newrelic::params {
+) inherits ::newrelic::params {
 
   if ! $newrelic_license_key {
     fail('You must specify a valid License Key.')
@@ -102,5 +102,4 @@ class newrelic::server::linux (
     require => Package[$newrelic_package_name],
     notify  => Service[$newrelic_service_name],
   }
-
 }
