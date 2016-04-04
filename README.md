@@ -29,33 +29,33 @@ Quick Start
 To install the Newrelic Server Monitoring and the PHP agent packages, include the following in your manifest file:
 
     node default {
-         class {'newrelic::server::linux':
-           newrelic_license_key => 'your license key here',
-         }
+      class { '::newrelic::server::linux':
+        newrelic_license_key => 'your license key here',
+      }
 
-         class {'newrelic::agent::php':
-           newrelic_license_key  => 'your license key here',
-           newrelic_ini_appname  => 'Your PHP Application',
-         }
+      class { '::newrelic::agent::php':
+        newrelic_license_key => 'your license key here',
+        newrelic_ini_appname => 'Your PHP Application',
+      }
     }
 
 To do the same for a Windows .Net host, include the following:
 
     node default {
-         class {'newrelic::server::windows':
-           newrelic_license_key => 'your license key here',
-         }
+       class {'::newrelic::server::windows':
+         newrelic_license_key => 'your license key here',
+       }
 
-         class {'newrelic::agent::dotnet':
-           newrelic_license_key  => 'your license key here',
-         }
+       class {'::newrelic::agent::dotnet':
+         newrelic_license_key  => 'your license key here',
+       }
     }
 
 (Note that, while it is possible to specify a version of the .Net agent, caution should be excercised if doing this. Newrelic make only the last two releases available on http://download.newrelic.com/dot_net_agent/release/.)
 
 If you use Ubuntu 14.04 and php5-fpm you can pass an array of directories for PHP ini files:
 
-         class {'newrelic::agent::php':
+         class {'::newrelic::agent::php':
            newrelic_license_key  => 'your license key here',
            newrelic_ini_appname  => 'Your PHP Application',
            newrelic_php_conf_dir => ['/etc/php5/mods-available/conf.d','/etc/php5/fpm/conf.d'],
