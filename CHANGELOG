@@ -1,8 +1,16 @@
-## ehime-newrelic changelog
+## puppet-newrelic changelog
 
-Release notes for the ehime-newrelic module.
+Release notes for the puppet-newrelic module.
 
 ------------------------------------------
+
+#### 4.1.3/4 - 2016-04-11
+
+* Corrects bad build issues that have been occurring in CI tools
+
+#### 4.1.2 - 2016-04-09
+
+* PR #38 - Integrated better flow for newrelic deployments by simplifying script
 
 #### 4.1.1 - 2015-06-16
 
